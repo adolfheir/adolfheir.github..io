@@ -75,6 +75,8 @@ pagination_dir: page
 #RSS订阅
 plugin:
 - hexo-generator-feed
+- hexo-generator-sitemap
+- hexo-generator-baidu-sitemap
 #Feed Atom
 feed:
   type: atom
@@ -86,6 +88,12 @@ search:
   field: post
   format: html
   limit: 10000
+#站点地图
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
 
 ## Themes: https://hexo.io/themes/
 theme: black-blue
