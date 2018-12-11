@@ -7,9 +7,9 @@ menu:
   # 主页: /archives/
   所有文章: /archives/
   动画: /categories/animate/
-  算法: /categories/algorithm
-  杂记: /categories/other
-  关于我: /about/
+  算法: /categories/algorithm/
+  杂记: /categories/others/
+  # 关于我: /about/
 # 静心阅读: /tags
 
 # Link to your avatar | 填写头像地址
@@ -109,12 +109,12 @@ tagcloud: true
 
 # Blogroll, Link exchange | 友情链接
 # friends: false
-friends:
-  csdn: http://blog.csdn.net/baidu_21483933
-  segmentfault: https://segmentfault.com/blog/maocg_web
-  简书: http://www.jianshu.com/users/eb37ef89c746/latest_articles
+friends: false
+  # csdn: http://blog.csdn.net/baidu_21483933
+  # segmentfault: https://segmentfault.com/blog/maocg_web
+  # 简书: http://www.jianshu.com/users/eb37ef89c746/latest_articles
 #是否开启“关于我”。
-aboutme: 爱动漫,爱游戏,爱编程,爱运动,爱的太多了!
+aboutme: 我不会死的，我最近最想要的就是死，我想要的，总是不会实现，所以，我不会死的。
 #aboutme: false
 
 # 是否在新窗口打开链接
