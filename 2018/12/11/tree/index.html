@@ -7,17 +7,20 @@
   
   
   
-  <title>关于我 | 好好学习，天天向上</title>
+  <title>数据结构-树 | 好好学习，天天向上</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="code">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="https://adolfheir.github.io/about/index.html">
+  <meta name="description" content="树的结点包含一个数据和多个指向子树的分支 结点拥有的子树的数量为结点的度，度为0的结点是叶结点，度不为0的结点为分支结点，树的度定义为树的所有结点中度的最大值。。。">
+<meta name="keywords" content="tree,数据结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构-树">
+<meta property="og:url" content="https://adolfheir.github.io/2018/12/11/tree/index.html">
 <meta property="og:site_name" content="好好学习，天天向上">
+<meta property="og:description" content="树的结点包含一个数据和多个指向子树的分支 结点拥有的子树的数量为结点的度，度为0的结点是叶结点，度不为0的结点为分支结点，树的度定义为树的所有结点中度的最大值。。。">
 <meta property="og:locale" content="zn">
-<meta property="og:updated_time" content="2019-08-22T13:51:13.419Z">
+<meta property="og:updated_time" content="2019-08-22T13:51:13.382Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于我">
+<meta name="twitter:title" content="数据结构-树">
+<meta name="twitter:description" content="树的结点包含一个数据和多个指向子树的分支 结点拥有的子树的数量为结点的度，度为0的结点是叶结点，度不为0的结点为分支结点，树的度定义为树的所有结点中度的最大值。。。">
   
     <link rel="alternative" href="/atom.xml" title="好好学习，天天向上" type="application/atom+xml">
   
@@ -42,7 +45,7 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -262,11 +265,11 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-tree" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2018-12-09T15:10:51.000Z" itemprop="datePublished">2018-12-09</time>
+      <a href="/2018/12/11/tree/" class="article-date">
+      <time datetime="2018-12-11T07:48:11.000Z" itemprop="datePublished">2018-12-11</time>
 </a>
 
     </div>
@@ -280,7 +283,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      关于我
+      数据结构-树
     </h1>
   
 
@@ -289,8 +292,16 @@
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/algorithm/">algorithm</a>
+    </div>
+
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tree/">tree</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据结构/">数据结构</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -298,53 +309,101 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta {
-        display: none;
-    }
-    #container .article .article-title {
-        padding-right: 0;
-    }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover {
-        border-left: none;
-    }
-    .article-title {
-        font-size: 1.6em
-    }
-    .article-meta {
-        display: none;
-    }
-    .article-entry hr {
-        margin: 0;
-    }
-    #container .article-info-post.article-info {
-      display: none;
-      }
-    #container .article .article-title {
-    padding: 0;
-    }
-</style>
+        <p>树的结点包含一个数据和多个指向子树的分支 结点拥有的子树的数量为结点的度，度为0的结点是叶结点，度不为0的结点为分支结点，树的度定义为树的所有结点中度的最大值。。。</p>
+<a id="more"></a>
+<h2 id="普通树"><a href="#普通树" class="headerlink" title="普通树"></a>普通树</h2><h3 id="树的概念"><a href="#树的概念" class="headerlink" title="树的概念"></a>树的概念</h3><h4 id="树的度"><a href="#树的度" class="headerlink" title="树的度"></a>树的度</h4><p>树的结点包含一个数据和多个指向子树的分支 结点拥有的子树的数量为结点的度，度为0的结点是叶结点，度不为0的结点为分支结点，树的度定义为树的所有结点中度的最大值。</p>
+<h4 id="树的前驱和后继"><a href="#树的前驱和后继" class="headerlink" title="树的前驱和后继"></a>树的前驱和后继</h4><p>结点的直接后继称为结点的孩子，结点称为孩子的双亲。 结点的孩子的孩子称为结点的孙子，结点称为子孙的祖先。 同一个双亲的孩子之间互称兄弟。</p>
+<h4 id="树中结点的层次"><a href="#树中结点的层次" class="headerlink" title="树中结点的层次"></a>树中结点的层次</h4><p>树中根结点为第1层，根结点的孩子为第2层，依次类推。 树中结点的最大层次称为树的深度或高度</p>
+<h4 id="树的有序性"><a href="#树的有序性" class="headerlink" title="树的有序性"></a>树的有序性</h4><p>如果树中结点的各子树从左向右是有序的，子树间不能互换位置，则称该树为有序树，否则为无序树。 </p>
+<h4 id="森林"><a href="#森林" class="headerlink" title="森林"></a>森林</h4><p>森林是由n棵互不相交的树组成的集合。 三棵树组成的森林如下： </p>
+<h3 id="树的遍历"><a href="#树的遍历" class="headerlink" title="树的遍历"></a>树的遍历</h3><p>树的遍历分为递归和非递归广度优先   非递归深度优先</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// dfs 递归</span></span><br><span class="line"><span class="keyword">let</span> arr =[]</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepTraversal</span>(<span class="params">tree</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(tree != <span class="literal">null</span>)&#123;</span><br><span class="line">        arr.push(tree);</span><br><span class="line">        <span class="keyword">let</span> child = tree.children;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; child.length; i++) &#123;</span><br><span class="line">            deepTraversal(child[i])        </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">deepTraversal(tree)</span><br><span class="line"><span class="built_in">console</span>.log(arr)</span><br><span class="line"><span class="comment">// dfs 非递归</span></span><br><span class="line"><span class="keyword">let</span> arr = []; </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepTraversal</span>(<span class="params">tree</span>) </span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (tree != <span class="literal">null</span>) &#123;  </span><br><span class="line">        <span class="keyword">let</span> stack = [];  </span><br><span class="line">        stack.push(tree);  </span><br><span class="line">        <span class="keyword">while</span> (stack.length != <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">let</span> item = stack.pop();  </span><br><span class="line">            arr.push(item);  </span><br><span class="line">            <span class="keyword">let</span> children = item.children;  </span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">let</span> i = children.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--)  </span><br><span class="line">                stack.push(children[i]);  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;    </span><br><span class="line">&#125;  </span><br><span class="line">deepTraversal(tree)</span><br><span class="line"><span class="built_in">console</span>.log(arr)</span><br><span class="line"><span class="comment">// bfs 非递归</span></span><br><span class="line"><span class="keyword">let</span> arr = []; </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">wideTraversal</span>(<span class="params">tree</span>) </span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (tree != <span class="literal">null</span>) &#123;  </span><br><span class="line">        <span class="keyword">let</span> queue = [];  </span><br><span class="line">        queue.unshift(tree);  </span><br><span class="line">        <span class="keyword">while</span> (queue.length != <span class="number">0</span>) &#123;  </span><br><span class="line">            <span class="keyword">let</span> item = queue.shift();  </span><br><span class="line">            arr.push(item);  </span><br><span class="line">            <span class="keyword">let</span> children = item.children;  </span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; children.length; i++)  </span><br><span class="line">                queue.push(children[i]);  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125; </span><br><span class="line">wideTraversal(tree)</span><br></pre></td></tr></table></figure>
 
-
-          
-        
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/12/11/tree/">数据结构-树</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 一天只吃一颗糖 的个人博客">一天只吃一颗糖</a></p>
+        <p><span>发布时间:</span>2018年12月11日 - 15时48分</p>
+        <p><span>最后更新:</span>2019年08月22日 - 21时51分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/12/11/tree/" title="数据结构-树">https://adolfheir.github.io/2018/12/11/tree/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://adolfheir.github.io/2018/12/11/tree/　　作者: 一天只吃一颗糖" title=""></span>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+<nav id="article-nav">
+  
+    <a href="/2018/12/13/webpack添加版本号/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          webpack添加版本号
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/12/11/start/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo文档</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
 
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#普通树"><span class="toc-number">1.</span> <span class="toc-text">普通树</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#树的概念"><span class="toc-number">1.1.</span> <span class="toc-text">树的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#树的度"><span class="toc-number">1.1.1.</span> <span class="toc-text">树的度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#树的前驱和后继"><span class="toc-number">1.1.2.</span> <span class="toc-text">树的前驱和后继</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#树中结点的层次"><span class="toc-number">1.1.3.</span> <span class="toc-text">树中结点的层次</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#树的有序性"><span class="toc-number">1.1.4.</span> <span class="toc-text">树的有序性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#森林"><span class="toc-number">1.1.5.</span> <span class="toc-text">森林</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#树的遍历"><span class="toc-number">1.2.</span> <span class="toc-text">树的遍历</span></a></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+<input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
 
 
 
@@ -370,7 +429,7 @@
 <script src="/css/zn/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-  id: '关于我', // 可选。默认为 location.href
+  id: '数据结构-树', // 可选。默认为 location.href
   owner: 'adolfheir',
   repo: 'adolfheir.github.io',
   oauth: {
@@ -384,6 +443,43 @@ gitment.render('comments')
     
 
 
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/12/13/webpack添加版本号/" title="上一篇: webpack添加版本号">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2018/12/11/start/" title="下一篇: hexo文档">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/08/22/三方技术选型/">三方技术选型</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/12/13/webpack添加版本号/">webpack添加版本号</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/12/11/tree/">数据结构-树</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/12/11/start/">hexo文档</a></li></ul>
+    
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+    <script>
+        $(".post-list").addClass("toc-article");
+        // $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
 
 
 
