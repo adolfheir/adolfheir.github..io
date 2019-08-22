@@ -109,10 +109,8 @@ tagcloud: true
 
 # Blogroll, Link exchange | 友情链接
 # friends: false
-friends: false
-  # csdn: http://blog.csdn.net/baidu_21483933
-  # segmentfault: https://segmentfault.com/blog/maocg_web
-  # 简书: http://www.jianshu.com/users/eb37ef89c746/latest_articles
+friends: 
+  酥油饼博客: http://www.fjsu.club/
 #是否开启“关于我”。
 aboutme: 我不会死的，我最近最想要的就是死，我想要的，总是不会实现，所以，我不会死的。
 #aboutme: false
